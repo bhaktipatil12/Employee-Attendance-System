@@ -1,0 +1,21 @@
+@model IEnumerable<EmployeeAttendanceSystem.Models.Attendance>
+
+<h2>Attendance Records</h2>
+<a href="/Attendance/MarkAttendance" class="btn btn-primary mb-3">Mark Attendance</a>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Date</th>
+        <th>Employee</th>
+        <th>Status</th>
+    </tr>
+
+    @foreach (var att in Model)
+    {
+        <tr>
+            <td>@att.Date.ToShortDateString()</td>
+            <td>@att.Employee.Name</td>
+            <td>@att.Status</td>
+        </tr>
+    }
+</table>

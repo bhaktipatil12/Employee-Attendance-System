@@ -1,0 +1,20 @@
+@model IEnumerable<EmployeeAttendanceSystem.Models.Attendance>
+
+<h2>Attendance Report</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Employee</th>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+
+@foreach (var rec in Model)
+{
+    <tr>
+        <td>@rec.Employee.Name</td>
+        <td>@rec.Date.ToShortDateString()</td>
+        <td>@rec.Status</td>
+    </tr>
+}
+</table>

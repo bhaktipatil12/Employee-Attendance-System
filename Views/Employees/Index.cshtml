@@ -1,0 +1,31 @@
+@model IEnumerable<EmployeeAttendanceSystem.Models.Employee>
+
+<h2>Employee List</h2>
+<a class="btn btn-primary mb-3" href="/Employees/Create">Add Employee</a>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+        <th>Date of Joining</th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var emp in Model)
+{
+    <tr>
+        <td>@emp.Id</td>
+        <td>@emp.Name</td>
+        <td>@emp.Department</td>
+        <td>@emp.Designation</td>
+        <td>@emp.DateOfJoining.ToShortDateString()</td>
+        <td>
+            <a href="/Employees/Edit/@emp.Id" class="btn btn-sm btn-warning">Edit</a>
+            <a href="/Employees/Details/@emp.Id" class="btn btn-sm btn-info">Details</a>
+            <a href="/Employees/Delete/@emp.Id" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+</table>
