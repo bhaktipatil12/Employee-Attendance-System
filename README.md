@@ -299,7 +299,7 @@ You can extend this system with:
 - Implement role-based access control
 - Attendance analytics dashboard
 
----
+--- ## Screenshots are available in Issues section named  Screenshots
 
 ## 👩‍💻 Author
 **Patil Bhakti Prashant**  
