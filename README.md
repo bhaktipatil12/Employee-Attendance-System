@@ -1,6 +1,6 @@
-# 📘 Employee Attendance Management System (ASP.NET Core MVC)
+# Employee Attendance Management System (ASP.NET Core MVC)
 
-## 📝 Project Description
+## Project Description
 The **Employee Attendance Management System** is a web-based application built using **ASP.NET Core MVC (.NET 8)** and **Entity Framework Core 9.0.10**.  
 It helps organizations manage employee details and daily attendance efficiently.  
 
@@ -60,7 +60,7 @@ EmployeeAttendanceSystem/
 
 ---
 
-## 🧠 Features
+## Features
 ✅ Manage Employee Records (CRUD operations)  
 ✅ Mark Employee Attendance (Present / Absent / Leave)  
 ✅ Generate Attendance Reports  
@@ -291,7 +291,7 @@ dotnet ef database update
 
 ---
 
-## 🔐 Optional Enhancements
+##Optional Enhancements
 You can extend this system with:
 - Admin login authentication (Identity-based)
 - Export attendance reports to Excel or PDF
